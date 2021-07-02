@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard - Health Track</title>
+
+    <link href="css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body class="body -private">
+  <header class="header navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <a href="./index.html" class="navbar-brand mr-0 mr-2">
+      <h4>Health Track</h4>
+    </a>
+
+    <ul class="navbar-nav flex-row ml-auto d-none d-sm-flex">
+      <li class="nav-item">
+        <a class="nav-link -navbar" href="./perfil.html" title="Perfil">
+          <span>Perfil</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link -navbar" href="./sair.html" title="Sair">
+          <span>Sair</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="flex-row ml-auto d-block d-sm-none">
+      <button class="toggle js-toggle-menu" type="button">
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="sidebar js-menu">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link -active -sidebar" title="Dashboard">
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./peso.html" class="nav-link -sidebar" title="Meu Peso">
+                <span>Meu Peso</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./pressao.html" class="nav-link -sidebar" title="Pressão Arterial">
+                <span>Pressão Arterial</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./alimentacao.html" class="nav-link -sidebar" title="Alimentação">
+                <span>Alimentação</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./exercicios.html" class="nav-link -sidebar" title="Exercícios">
+                <span>Exercícios</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./glicemia.html" class="nav-link -sidebar" title="Glicemia">
+                <span>Glicemia</span>
+              </a>
+            </li>
+
+            <li class="nav-item d-block d-sm-none">
+              <a href="./perfil.html" class="nav-link -sidebar" title="Perfil">
+                <span>Perfil</span>
+              </a>
+            </li>
+            <li class="nav-item d-block d-sm-none">
+              <a href="./sair.html" class="nav-link -sidebar" title="Sair">
+                <span>Sair</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="ml-auto">
+        <section class="page -dashboard px-5">
+          <header class="page-header d-none">
+            <h2>Dashboard</h2>
+          </header>
+
+          <article class="page-content">
+            <div class="row">
+              <div class="col-sm-12 mb-4">
+                <div class="card -user">
+                  <div class="card-body">
+                    <div class="media">
+                     <div class="media-body">
+                        <h3 class="card-title mb-0">Sylvio Martins</h3>
+                        <ul class="list-inline m-0">
+                          <li class="list-inline-item">
+                            <p class="card-text mb-0">22 anos</p>
+                          </li>
+                          <li class="list-inline-item">
+                            <p class="card-text mb-0">75 kilos</p>
+                          </li>
+                          <li class="list-inline-item">
+                            <p class="card-text mb-0">1.78 altura</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card -status">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span>IMC</span>
+                    </h3>
+                    <p class="card-text">26,7</p>
+                  </div>
+                  <div class="card-footer bg-warning">
+                    <small class="text text-white text-uppercase">Sobrepeso</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+                <div class="card -status">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span>Pressão Arterial</span>
+                    </h3>
+                    <p class="card-text">120/80</p>
+                  </div>
+                  <div class="card-footer bg-success">
+                    <small class="text text-white text-uppercase">Normal</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card -status">
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      <span>Glicose</span>
+                    </h3>
+                    <p class="card-text">200 mg/dl</p>
+                  </div>
+                  <div class="card-footer bg-danger">
+                    <small class="text text-white text-uppercase">Diabético</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+
+<script src="js/app.js"></script></body>
+</html>
